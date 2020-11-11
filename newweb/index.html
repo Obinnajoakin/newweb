@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complet website design using html and css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="logo.jpg" class="logo">
+            <div class="header-text">
+                <h1>Mr. Obinna with <h3>08132884419</h3>is a developer with passion<br> for innovation</h1>
+                <p>Bringing technology to your door step, in few years to come by God's grace, 80% of what i do will be
+                    online.<br>So take your time to learn so you can win tommorrow</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US></a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFER</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <img src="Menu.jpg" id="menuBtn">
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function () {
+            if (sideNav.style.right = "-250px") {
+                sideNav.style.right = "0";
+            } else {
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
