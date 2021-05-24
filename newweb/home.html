@@ -4,8 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complet website design using html and css</title>
-    <link rel="stylesheet" href="style.css">
+    <title>home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+            height: 100vh;
+            background-image: url(background.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container {
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        .logo {
+            margin-top: 30px;
+            width: 100px;
+        }
+
+        .header-text {
+            max-width: 350px;
+            margin-top: 140px;
+        }
+
+        .line-3 {
+            width: 60px;
+            height: 1px;
+            background: #f67c92;
+            display: inline-block;
+        }
+
+        .line {
+            line-height: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,20 +71,6 @@
             <li><a href="contact us.html">CONTACT US</a></li>
         </ul>
     </nav>
-    <img src="Menu.jpg" id="menuBtn">
-    <script>
-        var menuBtn = document.getElementById("menuBtn");
-        var sideNav = document.getElementById("sideNav");
-
-        sideNav.style.right = "-250px";
-        menuBtn.onclick = function () {
-            if (sideNav.style.right = "-250px") {
-                sideNav.style.right = "0";
-            } else {
-                sideNav.style.right = "-250px";
-            }
-        }
-    </script>
 
 </body>
 
